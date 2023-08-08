@@ -6,40 +6,78 @@
     <title>Знвкомство с HTML CSS 3 (Формы)</title>
   </head>
   <body>
-    <form action="#" method="post" enctype="multipart/form-data"></form>
-    <div>
-      <input type="text" name="Username" value="" />
-    </div>
-    <br />
-    <div>
-      <input type="password" name="Userpass" value="" />
-    </div>
-    <br />
-    <div>
-      <p><input tipe="radio" name="beer" value="Lager" />Светлое пиво</p>
-      <p><input tipe="radio" name="beer" value="Dark" />Тёмное пиво</p>
-    </div>
-    <br />
-    <div>
-      <p><input type="radio" name="beer2" value="Lager" />Светлое пиво</p>
-      <p><input tipe="radio" name="beer2" value="Dark" />Тёмное пиво</p>
-    </div>
-    <br />
-    <div>
-      <p><input type="checkbox" name="car" value="yes" />Наличие авто</p>
-      <p>
-        <input checked type="checkbox" name="car2" value="yes" />Наличие авто2
-      </p>
-      <p><input type="checkbox" name="car3" value="yes" />Наличие авто3</p>
-      <p>
-        <input checked type="checkbox" name="car4" value="yes" />Наличие авто4
-      </p>
-    </div>
-    <br />
-    <div>
-      <p>
-        <input type="file" name="photo"  />
-      </p>
-    </div>
+    <form action="#" method="get">
+      <div>
+        <p>Name</p>
+        <input placeholder="name" tabindex="1" name="Username" type="text" />
+      </div>
+      <div>
+        <p>Password</p>
+        <input tabindex="2" name="Userpass" type="password" />
+      </div>
+      <div>
+        <p>Phone</p>
+        <input tabindex="3" name="Userphone" type="tel" />
+      </div>
+      <div>
+        <p>SEX</p>
+        <div>
+          <input tabindex="4" checked type="radio" name="Gender" value="male" />
+          Male
+        </div>
+        <div>
+          <input tabindex="4" type="radio" name="Gender" value="fimale" />
+          Fimale
+        </div>
+      </div>
+      <!-- Property -->
+      <div>
+        <p>Property</p>
+        <div>
+          <input tabindex="5" checked type="checkbox" name="bike" value="yes" />
+          bike
+        </div>
+        <div>
+          <input tabindex="6" type="checkbox" name="car" value="yes" /> Car
+        </div>
+        <div>
+          <input
+            tabindex="7"
+            disabled
+            type="checkbox"
+            name="flat"
+            value="yes"
+          />
+          Flat
+        </div>
+      </div>
+      <!-- More info -->
+      <div>
+        <p>More info</p>
+        <div>
+          <textarea tabindex="8" name="text"></textarea>
+        </div>
+      </div>
+      <!-- photo -->
+      <div>
+          <p>photo</p>
+          <input tabindex="9" type="file">
+      </div>
+      <!-- Favorit color -->
+      <div>
+        <p>Favorit color</p>
+        <select tabindex="10" name="color">
+          <option value="red">Red</option>
+          <option selected value="green">Green</option>
+          <option value="blue">Blue</option>
+        </select>
+      </div>
+      <!-- Actions -->
+      <div>
+        <p>Actions</p>
+        <button tabindex="11" type="submit" >Send</button>
+        <button tabindex="12" type="reset" >Clean</button>
+      </div>
+    </form>
   </body>
 </html>
